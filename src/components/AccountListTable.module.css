@@ -1,0 +1,25 @@
+.accountlistTable {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px 40px;
+  text-align: left;
+}
+
+.accountTableTH {
+  background-color: #fff;
+  border-bottom: 1px solid rgb(157, 155, 155);
+  display: grid;
+  grid-template-columns: 1fr 2.5fr 2fr 0.5fr;
+  padding: 0 0 10px 0;
+}
+
+.accountTableHeader {
+  color: rgb(10, 182, 185);
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.accountTableHeader.alignRight {
+  text-align: right;
+}

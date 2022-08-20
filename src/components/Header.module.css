@@ -1,0 +1,11 @@
+.Header {
+  background-color: rgb(17, 184, 176);
+  text-align: center;
+  width: 100%;
+  padding: 30px 0;
+}
+
+.Header h4 {
+  margin: 0 auto;
+  color: #fff;
+}

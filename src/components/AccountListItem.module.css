@@ -1,0 +1,25 @@
+.accountTableListTH {
+  background-color: #fff;
+  border-bottom: 1px solid rgb(157, 155, 155);
+  display: grid;
+  grid-template-columns: 1fr 2.5fr 2fr 0.5fr;
+  padding: 10px 0;
+}
+
+.accountTableList {
+  color: #333;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.accountTableList.lightGery {
+  color: rgb(157, 155, 155);
+}
+
+.accountTableList.alignRight {
+  text-align: right;
+}
+
+.accountTableListTH:hover .accountTableList {
+  color: rgb(10, 182, 185);
+}
