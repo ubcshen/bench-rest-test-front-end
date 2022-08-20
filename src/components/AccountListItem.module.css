@@ -1,9 +1,9 @@
 .accountTableListTH {
-  background-color: #fff;
+  background-color: rgb(238, 244, 244);
   border-bottom: 1px solid rgb(157, 155, 155);
   display: grid;
   grid-template-columns: 1fr 2.5fr 2fr 0.5fr;
-  padding: 10px 0;
+  padding: 10px 40px;
 }
 
 .accountTableList {
