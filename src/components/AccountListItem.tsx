@@ -8,6 +8,7 @@ export const AccountListItem = (items: AccountInfo) => {
     day: "2-digit",
     year: "numeric",
   });
+
   return (
     <div className={styles.accountTableListTH}>
       <span className={cx(styles.accountTableList, styles.lightGery)}>
@@ -17,7 +18,10 @@ export const AccountListItem = (items: AccountInfo) => {
       <span className={cx(styles.accountTableList, styles.lightGery)}>
         {items.Ledger}
       </span>
-      <span className={cx(styles.accountTableList, styles.alignRight)}>
+      <span
+        className={cx(styles.accountTableList, styles.alignRight)}
+        date-testid="account-list-amount"
+      >
         ${items.Amount}
       </span>
     </div>

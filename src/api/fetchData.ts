@@ -7,13 +7,17 @@ export const fetchData = async (
   maxPages: number = Number.MAX_VALUE
 ): Promise<[]> => {
   const query = `${baseUrl}${page}.json`;
-  const response = await axios.get(query);
-  const data = response.data;
-  const tempMaxPage = Math.ceil(data.totalCount / data.transactions.length);
-  const maxPage = tempMaxPage > maxPages ? maxPages : tempMaxPage;
-  if (data.page < maxPage) {
-    return data.transactions.concat(await fetchData(page + 1, maxPage));
-  } else {
-    return data.transactions;
+  try {
+    const response = await axios.get(query);
+    const data = response.data;
+    const tempMaxPage = Math.ceil(data.totalCount / data.transactions.length);
+    const maxPage = tempMaxPage > maxPages ? maxPages : tempMaxPage;
+    if (data.page < maxPage) {
+      return data.transactions.concat(await fetchData(page + 1, maxPage));
+    } else {
+      return data.transactions;
+    }
+  } catch (err) {
+    throw new Error("Unable to get data.");
   }
 };

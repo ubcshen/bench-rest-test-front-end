@@ -23,3 +23,7 @@
 .accountTableHeader.alignRight {
   text-align: right;
 }
+
+.accountTableHeader:hover {
+  cursor: pointer;
+}

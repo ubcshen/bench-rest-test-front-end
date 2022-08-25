@@ -8,6 +8,8 @@ It loads pagenation data from API
 
 and then display it on a page and also output the sum of all the amount
 
+<b>Right now the Date and Company can be sorted by clicking on it</b>
+
 Additional Modules i am using for this project are<br/>
 1. axios it handles fetch better than the js Fetch()<br/>
 2. classnames. so i can use multi classname for one element<br/>
@@ -17,5 +19,3 @@ To run the project<br/>
 2. <b>npm start</b>
 
 In the real world, if it is a much bigger data set, i will set redux or any other state management system to handle data and may suggest to use GraphQl to handle what data need to be loaded
-
-Also the way i am writing, will be hard for people to click on header item "company, date" to sort the result.
